@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid exercise</title>
+    <style>
+        .pic-grid {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 20px;
+            margin-left: 20px;
+        }
+
+        .profile {
+            background-color: rgb(45, 32, 58);
+            width: 200px;
+            margin-right: 15px;
+            vertical-align: top;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+
+        .mutual-row {
+            display: grid;
+            grid-template-columns: 35px 1fr;
+            align-items: center;
+            margin-left: 8px;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            width: 28px;
+            height: 28px;
+            object-fit: cover;
+            border-radius: 14px;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 8px;
+            margin-bottom: 5px;
+        }
+
+        .mutual-friends {
+            color: rgb(100, 100, 100);
+        }
+        .add-friends{
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            margin-left:10px;
+            background-color: rgb(67, 67, 194);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 4px;
+            border-style: solid;
+            border:none
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="pic-grid">
+        <div class="profile">
+            <img class="profile-pic" src="grid-pics/cat.jpg">
+            <p class="name">
+                Oliver
+            </p>
+     
+        <div class="mutual-row">
+            <img class="icon" src="grid-pics/dog2.jpg">
+            <p class="mutual-friends">
+                2 mutual friends
+            </p>
+        </div>
+        
+            <button class="add-friends">
+                Add Friend
+            </button>
+        </div>
+
+          <div class="profile">
+            <img class="profile-pic" src="grid-pics/cat2.jpg">
+            <p class="name">
+                Kalyan
+            </p>
+        
+        <div class="mutual-row">
+            <img class="icon" src="grid-pics/dog2.jpg">
+            <p class="mutual-friends">
+                3 mutual friends
+            </p>
+        </div>
+        
+            <button class="add-friends">
+                Add Friend
+            </button>
+        </div>
+
+          <div class="profile">
+            <img class="profile-pic" src="grid-pics/dog.jpg">
+            <p class="name">
+                Abhi
+            </p>
+        
+        <div class="mutual-row">
+            <img class="icon" src="grid-pics/dog2.jpg">
+            <p class="mutual-friends">
+                4 mutual friends
+            </p>
+        </div>
+        
+            <button class="add-friends">
+                Add Friend
+            </button>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    </div>
+</body>
+
+</html>
